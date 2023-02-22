@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/addUser.css" />
+    <link rel="stylesheet" href="./css/getUser.css" />
+    <title>Go Plus Inc.</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>User Management Assignment</h1>
+      <div class="user-form">
+        <h2 class="title">Add a User</h2>
+        <form id="UserForm" onsubmit="addUser()">
+          <div class="user_info">
+            <label for="fullname" class="form_label">Fullname:</label>
+            <input type="text" id="fullname" name="fullname" required />
+          </div>
+
+          <div class="user_info">
+            <label for="email" class="form_label">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="user_info">
+            <label for="dob" class="form_label">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required />
+          </div>
+
+          <div class="user_info">
+            <span class="form_label">Gender:</span>
+            <div class="gender" id="gender">
+              <input
+                type="radio"
+                id="male"
+                name="gender"
+                value="male"
+                required
+              />
+              <label for="male">Male</label>
+              <input
+                type="radio"
+                id="female"
+                name="gender"
+                value="female"
+                required
+              />
+              <label for="female">Female</label>
+              <input
+                type="radio"
+                id="others"
+                name="gender"
+                value="others"
+                required
+              />
+              <label for="others">Others</label>
+            </div>
+          </div>
+
+          <div class="user_info">
+            <label for="hobby" class="form_label">Hobby:</label>
+            <input type="text" id="hobby" name="hobby" required />
+          </div>
+
+          <div class="user_info">
+            <label for="country">Country:</label>
+            <select id="country" onchange="populateStates()" required>
+              <option value="">Select a country</option>
+              <option value="USA">USA</option>
+              <option value="Canada">Canada</option>
+            </select>
+          </div>
+
+          <div class="user_info">
+            <label for="state">State:</label>
+            <select id="state" onchange="populateCities()" required>
+              <!-- <option value="">Select a state</option> -->
+            </select>
+          </div>
+
+          <div class="user_info">
+            <label for="city">City:</label>
+            <select id="city" required>
+              <!-- <option value="">Select a city</option> -->
+            </select>
+          </div>
+
+          <input class="action_button" type="submit" value="Add User" />
+        </form>
+
+        <h2>Users</h2>
+        <table id="tab"></table>
+
+        <script src="./js/UserManagement.js"></script>
+        <script src="./js/dropdown.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
