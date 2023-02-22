@@ -1,9 +1,9 @@
 const data = {
   India: {
-    Haryana: ["Birmingham", "Montgomery", "Mobile"],
-    Delhi: ["Anchorage", "Fairbanks", "Juneau"],
-    Hyderabad: ["Phoenix", "Tucson", "Mesa"],
-    Bangalore: [],
+    Haryana: ["Faridabad", "Panipat", "Ambala", "Rohtak", "Hisar", "Sonipat"],
+    Mumbai: ["Colaba", "Marine Drive", "Bandra", "Juhu", "Thane", "Dadar"],
+    Telangana: ["Hyderabad", "Warangal", "Secunderabad", "Nizamabad"],
+    Karnataka: ["Bangalore", "Mangalore", "Belgaum", "Udupi"],
     // add more states and cities here
   },
   Canada: {
